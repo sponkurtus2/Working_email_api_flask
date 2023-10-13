@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Pico.css librarie -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>SendGrid API</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="grid">
+        <div style="text-align: center; margin-top: 50%">
+            <article>
+            <h1>Email Sender :D</h1>
+                <h3>Mediante esta pagina, se pueden enviar correos a ciertas personas</h3>
+                <p>El remitario es un correo verificado mio <em><mark>(sponkurtus098@mail.com)</mark></em></p>
+
+            </article>
+        </div>
+            <div>
+            <form method="POST" action="/send-email">
+                <article>
+                <label for="subject">Asunto:</label>
+                <input type="text" name="subject" required><br>
+
+                <label for="to">Destinatario (puede ser múltiple, separado por comas):</label>
+                <input type="email" name="to" required><br>
+
+                <label for="body_html">Cuerpo del Correo (HTML):</label>
+                <textarea name="bodyHtml" rows="4" required></textarea><br>
+
+                <input type="submit" value="Enviar Correo">
+                    </article>
+            </form>
+                </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
